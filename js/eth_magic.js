@@ -1,3 +1,5 @@
+window.ethereum.enable();
+
 window.addEventListener('load', function() {
             if (typeof web3 !== 'undefined') 
             {
