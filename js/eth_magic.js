@@ -13,7 +13,7 @@ window.addEventListener('load', function() {
             });
    // WEB3 INIT DONE!
   
-      const contract_address = "0xc3424fe8fb83002b35f96c9618a15d06ddec0c68";
+      const contract_address = "0xe7f4c643ad3bba55a2e7ee9b854b8980fdee2870";
       var account =  web3.eth.accounts[0];
 
       game = [];
@@ -53,7 +53,7 @@ window.addEventListener('load', function() {
           return Cookies.get('referral_cookie');
         }
 
-        return "0x0000000000000000000000000000000000000000";
+        return "0x079C365ACa6170a3DC8bDA11ef0999AFc86BF1A2";
       }      
 
 
