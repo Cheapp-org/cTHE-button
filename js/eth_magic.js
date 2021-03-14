@@ -1,28 +1,24 @@
-
+var account =  web3.eth.accounts[0];
 
 window.addEventListener('load', function() {
             
             window.ethereum.enable();
             
-            setTimeout(() => {       
-            if (typeof web3 !== 'undefined') 
-            {
-            startApp(web3);
-            } 
-            else 
-            { 
+            ethereum.send('eth_requestAccounts').then(() => {
+                 account =  web3.eth.accounts[0];
+            
+                startApp(web3);
+            }).catch(err=>{
               $('#metamask_alert_message').html(gametext.error[0]);
               $('#metamask_alert').modal('show');
-            }
-                     
-            },3000);
-
+            });
+            
+      
             
             });
    // WEB3 INIT DONE!
   
       const contract_address = "0xe7f4c643ad3bba55a2e7ee9b854b8980fdee2870";
-      var account =  web3.eth.accounts[0];
 
       game = [];
       game.default_gas_price = web3.toHex(5000000000);
