@@ -1,6 +1,7 @@
 window.ethereum.enable();
 
 window.addEventListener('load', function() {
+            setTimeout(() => {       
             if (typeof web3 !== 'undefined') 
             {
             startApp(web3);
@@ -10,6 +11,10 @@ window.addEventListener('load', function() {
               $('#metamask_alert_message').html(gametext.error[0]);
               $('#metamask_alert').modal('show');
             }
+                     
+            },3000);
+
+            
             });
    // WEB3 INIT DONE!
   
