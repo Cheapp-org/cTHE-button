@@ -5,7 +5,7 @@ function update_dash()
     {
     $('#clicked').html(', '+game.totalclick+' total clicked');
 
-    $('#eth_button').html(game.ethclickprice+' '+'<i class="fab fa-ethereum"></i>');     
+    $('#eth_button').html(game.ethclickprice+' '+' cTH');     
 
 
     $('#eth_total_pot').html(game.ethpot);
@@ -75,7 +75,7 @@ function reff_data(count,pot)
 
             if(pot>=0.0001)
             {
-            pot_text = "<br>Your referral share = "+pot+' <i class="fab fa-ethereum"></i>';
+            pot_text = "<br>Your referral share = "+pot+' cTH';
             }
 
         return "<br> You have "+count+" referrals. "+pot_text;
